@@ -1,0 +1,17 @@
+import pyautogui, time
+test = 0
+inputt = input("Spam (Y/N)? ")
+if inputt.lower() == "y":
+    test += 1
+    print("Spamming starting in 2 seconds")
+else:
+    test -= 1
+time.sleep(2.5)
+while test > 0:
+    pyautogui.typewrite(f"19 dollar Fortnite card!\n Who wants?\n")
+    pyautogui.press("Enter")
+else:
+    print("")
+
+
+
